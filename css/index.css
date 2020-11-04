@@ -1,0 +1,11 @@
+img {
+  width: 500px;
+  height: 500px;
+  -webkit-transform: translate(100px, 100px);
+          transform: translate(100px, 100px);
+}
+
+body {
+  background: red;
+}
+/*# sourceMappingURL=index.css.map */

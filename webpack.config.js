@@ -1,4 +1,6 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // 這個套件在3.0版本以後需要將它解構出來
 
 module.exports = {
     mode: "development",
@@ -31,20 +33,16 @@ module.exports = {
                     }
                 }
             },
-            // {
-            // test: /\.css$/,
-            // use: ['style-loader', 'css-loader']
-            // },
-            // {
-            // test: /\.scss$/,
-            // use: ['style-loader', 'css-loader', 'sass-loader'] // sass-loader : 編譯 sass 的loader
-            // },
-
             {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'] // 加入postcss-loader
             }
         ]
-    }
-
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './index.html'  // 要用的模板路徑
+        }),
+        new CleanWebpackPlugin()
+    ]
 }
