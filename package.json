@@ -1,0 +1,33 @@
+{
+  "name": "webpack_notes",
+  "version": "1.0.0",
+  "description": "在webpack中有一個入口文件，通過入口文件告訴webpack從哪裡開始，並根據依賴關係確認需要打包的內容，最後通過出口文件把文件打包出來。",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js0731/Webpack_notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/js0731/Webpack_notes/issues"
+  },
+  "homepage": "https://github.com/js0731/Webpack_notes#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "file-loader": "^6.2.0",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^4.0.4",
+    "sass-loader": "^10.0.5",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.0.1"
+  }
+}
